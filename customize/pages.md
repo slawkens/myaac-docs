@@ -19,6 +19,8 @@ echo 'This is my awesome page';
 
 Visit http://localhost/?p=my-awesome-page to view the page.
 
+Note: for MyAAC 1.0+ the address will be http://localhost/index.php/my-awesome-page
+
 ### Through admin panel
 
 Go to `localhost/admin`
