@@ -26,17 +26,16 @@ git clone https://github.com/otsoft/myaac.git
 cd myaac
 ```
 
-### **5. (optional) Change branch to develop to use latest features**
+### **5. (optional) Change branch to develop to use latest features (use just to test things, do not use on production server - you have been warned!)**
 
 ```bash
 git checkout develop
 ```
 
-You are done. If you did Step 5., then also follow next (optional) steps.
+### **6. Install Composer**
+Visit https://getcomposer.org/ for more instructions.
 
-### **6. (optional) Install composer: https://getcomposer.org/**
-
-### **7. (optional) Install dependencies**
+### **7. Install Composer dependencies**
 
 After installing composer, install dependencies with following command
 
