@@ -2,7 +2,9 @@
 
 Next step is to configure web server, so it will serve our website.
 
-There are many possible options to use, but in this tutorial we will just cover the two most populars: 1) apache2 and 2) nginx.
+There are many possible options to use, but in this tutorial we will just cover the two most populars: 
+1) [apache2](#option-1-apache2) and
+2) [nginx](#option-2-nginx)
 
 ## Option 1: apache2
 
@@ -52,49 +54,33 @@ sudo apt install -y nginx php-fpm php-zip php-xml php-mysql
 ### **2. Edit `/etc/nginx/sites-enabled/default`**
 
 You can take following configuration as an example:
+https://github.com/slawkens/myaac/commits/main/nginx-sample.conf
 
-```
-server {
-	listen 80;
-	root /home/otserv/www/public;
-	index index.php;
-	server_name your-domain.com;
-
-	# increase max file upload
-	client_max_body_size 10M;
-
-	# this is very important, be sure its in your nginx conf - it prevents access to logs etc.
-	location ~ /system {
-		deny all;
-	}
-
-	# block .htaccess, CHANGELOG.md, composer.json etc.
-	# this is to prevent finding software versions
-	location ~\.(ht|md|json|dist)$ {
-		deny all;
-	}
-
-	# block git files and folders
-	location ~ /\.git {
-		deny all;
-	}
-
-	location / {
-		try_files $uri $uri/ /index.php?$query_string;
-	}
-
-	location ~ \.php$ {
-		include snippets/fastcgi-php.conf;
-		fastcgi_read_timeout 240;
-		fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
-		# for ubuntu 22.04+ it will be php8.1-fpm.sock
-	}
-}
-```
+Don't copy it 1:1, but take it as example, how your config might look like.
 
 Replace server\_name with your domain, and adjust fastcgi\_pass to your PHP version.
 
+The most important parts of this config, are those two:
+
+#### 1.
+```
+location ~ /system {
+    deny all;
+}
+```
+This one blocks access to system folder, where logs and source code is stored: If you don't add it, anyone will be able to read your PayPal logs (for example)!!!
+
+#### 2.
+```
+location / {
+    try_files $uri $uri/ /index.php?$query_string;
+}
+```
+This one is not so dangerous, but without it, you won't be able to see some pages:
+
 ### **3. Restart nginx**
+
+Finally, we can restart the nginx to make our changes happen.
 
 ```bash
 sudo service nginx restart
