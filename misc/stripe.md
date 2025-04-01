@@ -26,13 +26,13 @@ You should see following screen, fill it as follows:
 
 As **Endpoint URL** enter:
 
-*   For MyAAC 1.0+ and Gesior Shop System 6.0+
+* For MyAAC 1.0+ and Gesior Shop System 6.0+
 
-  * https://your-domain.com/payments-notify/stripe
+    * https://your-domain.com/payments-notify/stripe
 
 * For MyAAC 0.8 and Gesior Shop System 5.0+
 
-  * https://your-domain.com/payments/stripe.php
+    * https://your-domain.com/payments/stripe.php
 
 On the same screen, click on "Select events". You should see following screen.
 
