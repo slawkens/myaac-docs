@@ -28,7 +28,7 @@ And here's the list:
 * use separate tables without modifing the OTServ schema (myaac\_accounts, myaac\_players)
 * fundamental changes in Twig:
   * add option to write themes in Twig
-* two factor authentication for TFS 1.x
+* two-factor authentication for TFS 1.x
   * https://github.com/otland/forgottenserver/wiki/Two-factor-authentication
 * add some strong password requirements when creating new account
   * minimum one big letter, one small letter, digit and one special character?
@@ -60,7 +60,7 @@ And here's the list:
 * change global variables pointing to classes like $db, $cache to Singleton Pattern
 * new command to install the AAC from command line
   * headless install
-* i18n support (issue #1 on github)
+* i18n support (issue #1 on GitHub)
   * use some web-based translation tools
     * most preferably https://weblate.org
     * or: [https://crowdin.com/](https://crowdin.com/)
