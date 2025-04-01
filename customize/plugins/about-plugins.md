@@ -6,7 +6,7 @@ Plugins are distributed using .zip archives.
 
 ## What can be done with plugins
 
-* Templates
+* Themes (old: templates)
 * Pages
 * Other custom content
 
@@ -28,9 +28,14 @@ This section should give some basic overview about plugins architecture.
   * your-plugin.json
   * your-plugin/ (directory)
     * all files that your plugins uses should be placed here.
-    * Except files like templates and pages that currently needs to be placed outside of this folder
+    * (applies only to 0.8) Except files like templates and pages that currently needs to be placed outside of this folder
       * templates in templates/ folder
       * pages in system/pages/
+    * (applies only to 1.0+) you can put custom content in the following folders under the plugin:
+      * pages/
+      * themes/
+      * and commands/
+    * This allows for high customization through the plugins
 
 ### Definition File
 
@@ -75,4 +80,6 @@ define('HOOK_LOGIN_ATTEMPT', 14); // executed on unsuccesfull attempt
 define('HOOK_LOGOUT', 15); // executed on logout
 ```
 
-For other hooks look in **system/hooks.php** file.
+For other hooks look in:
+* **system/hooks.php** (myaac 0.8)
+* **system/src/global.php** (myaac 1.0+).
