@@ -33,7 +33,7 @@ git checkout develop
 ```
 
 ### **6. Install Composer**
-Visit https://getcomposer.org/ for more instructions.
+Visit [https://getcomposer.org/](https://getcomposer.org/) for more instructions.
 
 ### **7. Install Composer dependencies**
 
@@ -52,7 +52,7 @@ composer install
 (depends on how you installed the composer on your system)
 
 ### 8. Install NPM
-Visit https://docs.npmjs.com/downloading-and-installing-node-js-and-npm for more instructions.
+Visit [https://docs.npmjs.com/downloading-and-installing-node-js-and-npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) for more instructions.
 
 ### 9. Install NPN dependencies
 ```bash
