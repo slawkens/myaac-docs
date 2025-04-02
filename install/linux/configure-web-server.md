@@ -54,7 +54,7 @@ sudo apt install -y nginx php-fpm php-zip php-xml php-mysql
 ### **2. Edit `/etc/nginx/sites-enabled/default`**
 
 You can take following configuration as an example:
-https://github.com/slawkens/myaac/commits/main/nginx-sample.conf
+[nginx-sample.conf](https://raw.githubusercontent.com/slawkens/myaac/refs/heads/main/nginx-sample.conf)
 
 Don't copy it 1:1, but take it as example, how your config might look like.
 
