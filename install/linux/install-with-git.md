@@ -11,7 +11,7 @@ sudo apt install git
 On linux, this can be /var/www
 
 ```bash
-cd /var/www
+mkdir /var/www && cd /var/www
 ```
 
 ### 3. Clone the repository from github
@@ -30,7 +30,7 @@ cd myaac
 
 Change file owner to www-data (web user)
 ```bash
-sudo chown -R www-data.www-data /var/www/*
+sudo chown -R www-data:www-data /var/www/*
 ```
 
 Set proper file flags (with chmod)
