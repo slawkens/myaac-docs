@@ -6,19 +6,25 @@ There are many possible options to use, but in this tutorial we will just cover 
 1) [apache2](#option-1-apache2) and
 2) [nginx](#option-2-nginx)
 
+### Update system first
+
+Before we continue, lets ensure we have the latest list of packages for our system:
+
+```bash
+sudo apt update
+```
+
 ## Option 1: apache2
 
 ### **1. Install apache2 with php and all required extensions if you still didn't have.**
 
 ```bash
-sudo apt install -y apache2 php php-zip php-xml php-mysql 
+sudo apt install -y apache2 php php-zip php-xml php-mysql php-gd
 ```
 
-### **2. Edit `/etc/apache2/sites-enabled/default`**
+### **2. Edit `/etc/apache2/sites-enabled/default.conf` or `000-default.conf`**
 
-Set `DocumentRoot` to path, where you previously downloaded MyAAC.
-
-We did it in `/var/www/myaac`, so lets point our server to it.
+Set `DocumentRoot` `/var/www/myaac`.
 
 ```
 DocumentRoot /var/www/myaac
@@ -48,7 +54,7 @@ sudo service apache2 restart
 ### **1. Install nginx with php and all required extensions if you still didn't have.**
 
 ```
-sudo apt install -y nginx php-fpm php-zip php-xml php-mysql 
+sudo apt install -y nginx php-fpm php-zip php-xml php-mysql php-gd
 ```
 
 ### **2. Edit `/etc/nginx/sites-enabled/default`**
