@@ -26,10 +26,19 @@ git clone https://github.com/otsoft/myaac.git
 cd myaac
 ```
 
-### 5. (optional) Change branch to develop to use latest features (use just to test things, do not use on production server - you have been warned!)
+### 5. Adjust file permissions
 
+Change file owner to www-data (web user)
 ```bash
-git checkout develop
+sudo chown -R www-data.www-data /var/www/*
+```
+
+Set proper file flags (with chmod)
+```bash
+sudo chmod 660 images/guilds
+sudo chmod 660 images/houses
+sudo chmod 660 images/gallery
+sudo chmod -R 760 system/cache
 ```
 
 ### 6. Install Composer
