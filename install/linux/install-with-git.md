@@ -54,7 +54,7 @@ composer install
 ### 8. Install NPM
 Visit [https://docs.npmjs.com/downloading-and-installing-node-js-and-npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) for more instructions.
 
-### 9. Install NPN dependencies
+### 9. Install NPM dependencies
 ```bash
 npm install
 ```
