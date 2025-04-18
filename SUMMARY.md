@@ -7,8 +7,8 @@
 ## Install
 
 * [Linux](install/linux/README.md)
-  * [Install with git](install/linux/install-with-git.md)
   * [Configure web server](install/linux/configure-web-server.md)
+  * [Install with git](install/linux/install-with-git.md)
   * [Serve](install/linux/serve.md)
 * [Windows](install/windows/README.md)
   * [Uniform Server (recommended)](install/windows/uniform-server-recommended.md)

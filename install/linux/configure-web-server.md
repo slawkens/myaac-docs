@@ -1,6 +1,6 @@
 # Configure web server
 
-Next step is to configure web server, so it will serve our website.
+First we will configure the web server, so it will serve our website.
 
 There are many possible options to use, but in this tutorial we will just cover the two most populars: 
 1) [apache2](#option-1-apache2) and

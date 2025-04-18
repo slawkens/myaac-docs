@@ -1,5 +1,7 @@
 # Install with git
 
+Next we will download & install MyAAC with git.
+
 ### 1. Install git
 
 ```bash
