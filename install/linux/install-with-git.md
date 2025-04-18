@@ -1,12 +1,12 @@
 # Install with git
 
-### 1. **Install git**
+### 1. Install git
 
 ```bash
 sudo apt install git
 ```
 
-### **2. Enter the desired folder where you want to install myaac.**
+### 2. Enter the desired folder where you want to install myaac.
 
 On linux, this can be /var/www
 
@@ -14,28 +14,28 @@ On linux, this can be /var/www
 cd /var/www
 ```
 
-### **3. Clone the repository from github**
+### 3. Clone the repository from github
 
 ```bash
 git clone https://github.com/otsoft/myaac.git
 ```
 
-### **4. Enter the folder**
+### 4. Enter the folder
 
 ```bash
 cd myaac
 ```
 
-### **5. (optional) Change branch to develop to use latest features (use just to test things, do not use on production server - you have been warned!)**
+### 5. (optional) Change branch to develop to use latest features (use just to test things, do not use on production server - you have been warned!)
 
 ```bash
 git checkout develop
 ```
 
-### **6. Install Composer**
+### 6. Install Composer
 Visit [https://getcomposer.org/](https://getcomposer.org/) for more instructions.
 
-### **7. Install Composer dependencies**
+### 7. Install Composer dependencies
 
 After installing composer, install dependencies with following command
 
