@@ -13,7 +13,7 @@ sudo apt install git
 On linux, this can be /var/www
 
 ```bash
-mkdir /var/www && cd /var/www
+cd /var/www
 ```
 
 ### 3. Clone the repository from github
@@ -65,7 +65,36 @@ composer install
 ### 8. Install NPM
 Visit [https://docs.npmjs.com/downloading-and-installing-node-js-and-npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) for more instructions.
 
-### 9. Install NPM dependencies
+TLDR: (Execute following commands to install the latest version of Node.js and NPM on Ubuntu)
+
+#### 1. Download NVM (Node Version Manager)
 ```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
+```
+#### 2. Reconnect ssh client (for example: Exit and login with putty)
+#### 3. Verify installation
+
+```bash
+command -v nvm
+```
+
+If it's ok, you should see "nvm" printed.
+
+#### 4. Install node
+```bash
+nvm install node # "node" is an alias for the latest version
+```
+
+#### 5. Update NPM to latest version
+```bash
+npm install -g npm
+```
+
+### 9. Install NPM dependencies
+
+If you followed the 8. Step, you should have NPM installed. Now you can install the dependencies.
+
+```bash
+cd /var/www/myaac
 npm install
 ```
