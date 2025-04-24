@@ -130,12 +130,12 @@ You can define the minimum version on which MyAAC plugin can be installed like t
 * syntactic sugar for db structure changes (https://github.com/slawkens/myaac/commit/e0036a3e32e8c37c28665dd7ae18ac9b8fc167d9)
 * support for button\_color (red, green, blue) in buttons.base.html.twig (https://github.com/slawkens/myaac/commit/b2c9eb474513650a014352d820602b8007eb3bf3)
 
-### v1.0 (current stable, master branch)
+### v1.0 (current stable, main branch)
 
-* new pages, Commands and themes can be placed directly in plugins folder. The respective folder are following:
-  * You need just to place them in correct folder and they will be loaded automatically - this allows better customization, without interfering with core AAC folders. This will allow in the future automatic updates for plugins as well the AAC as whole.
+* new pages, commands and themes can be placed directly in plugins folder. The respective folder are following:
+  * You need just to place them in correct folder, and they will be loaded automatically - this allows better customization, without interfering with core AAC folders. This will allow in the future automatic updates for plugins as well the AAC as whole.
     * pages/
-    * Commands/
+    * commands/
     * themes/
       * autoload of pages, commands and themes is configurable (https://github.com/slawkens/myaac/commit/c1d4b4f80cd6bb85507ee9471e47013955a26a91)
 * composer is now used for external libraries
