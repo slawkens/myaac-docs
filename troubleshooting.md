@@ -67,4 +67,9 @@ And then refresh the installation page again and follow the instructions
 1. Ensure you have SSL (https) enabled. This is required for PayPal to safely deliver Instant Payment Notifications (IPNs). You can generate a free SSL certificate via Certbot tool. Just visit its website - [https://certbot.eff.org/](https://certbot.eff.org/) and follow the instructions for your OS / web server.
 2. If you are using Cloudflare, you need to add an rule to ignore PayPal IPs. (to do: add screenshots/instructions how to do it).
 3. Additionally you can check PayPal IPN History to see the status of requests being sent to your web server. The IPN Status page if available under this address - [https://www.paypal.com/merchantnotification/ipn/history](https://www.paypal.com/merchantnotification/ipn/history)
+4. If you become following entry in system/logs/paypal_error.log
+
+`[Thu, 01 May 2025 23:13:50 +0200] Payment status is 'Pending'. Points will be added automatically after status is changed to 'completed'. Please wait.`
+
+It means the account email on PayPal website is not verified.
 
