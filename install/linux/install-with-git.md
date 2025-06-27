@@ -19,7 +19,7 @@ cd /var/www
 ### 3. Clone the repository from github
 
 ```bash
-git clone https://github.com/otsoft/myaac.git
+git clone https://github.com/slawkens/myaac.git
 ```
 
 ### 4. Enter the folder
