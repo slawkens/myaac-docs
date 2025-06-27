@@ -19,7 +19,7 @@ sudo apt update
 ### **1. Install apache2 with php and all required extensions if you still didn't have.**
 
 ```bash
-sudo apt install -y apache2 php php-zip php-xml php-mysql php-gd php-bcmath
+sudo apt install -y apache2 php php-zip php-xml php-mysql php-gd php-bcmath php-apcu
 ```
 
 ### **2. Edit `/etc/apache2/sites-enabled/default.conf` or `000-default.conf`**
@@ -54,7 +54,7 @@ sudo service apache2 restart
 ### **1. Install nginx with php and all required extensions if you still didn't have.**
 
 ```
-sudo apt install -y nginx php-fpm php-zip php-xml php-mysql php-gd php-bcmath
+sudo apt install -y nginx php-fpm php-zip php-xml php-mysql php-gd php-bcmath php-apcu
 ```
 
 ### **2. Edit `/etc/nginx/sites-enabled/default`**
