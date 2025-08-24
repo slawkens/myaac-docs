@@ -29,3 +29,4 @@
 * [TODO](misc/todo.md)
 * [Supported servers](misc/supported-servers.md)
 * [Stripe](misc/stripe.md)
+* [Commands](misc/commands.md)
