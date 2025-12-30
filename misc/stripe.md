@@ -4,7 +4,7 @@ description: How to configure Stripe payments
 
 # Stripe
 
-Whole process consist of 2 Steps:
+The whole process consists of 3 Steps:
 
 1. Add Webhook
 2. Generate secret key
