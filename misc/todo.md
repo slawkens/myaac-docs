@@ -28,22 +28,14 @@ And here's the list:
 * use separate tables without modifing the OTServ schema (myaac\_accounts, myaac\_players)
 * fundamental changes in Twig:
   * add option to write themes in Twig
-* two-factor authentication for TFS 1.x
-  * https://github.com/otland/forgottenserver/wiki/Two-factor-authentication
-* add some strong password requirements when creating new account
-  * minimum one big letter, one small letter, digit and one special character?
-  * should be configurable
 * better gallery with carousel
   * that is automatically generated from images in images/gallery folder (no need to upload)
-* remove original game template, use bootstrap
 * flags/permissions editor as new tab in accounts editor
   * example flag (for reference): FLAG\_CONTENT\_MAILER
   * after done: remember to remove "Website Access:" from account tab
 * maybe we can move serverInfo page to database (Pages) so it can be edited in Admin Panel (check how far possible)
 * move gallery Class to libs/gallery.php
 * kathrine tickets - show/hide
-* move rest of the pages to Twig: lostaccount, etc.
-* cache: option to clear cache completely
 * change constants: BASE\_URL to base\_url(), USE\_ACCOUNT\_NAME to config
 * new configurables:
   * login\_session\_time
@@ -84,9 +76,6 @@ And here's the list:
   * that allows recover by email address
   * look on original game website, they got something there
 * Export list of plugins as .json or .txt
-* apache2, nginx and lighttpd conf like in phpmyadmin
-* suggest name option in create character:
-  * https://github.com/nubs/random-name-generator
 * server data editor (web based file manager that shows and allows to edit the data folder)
 * configurable items storage -> db (slower load\&parse, better search) vs cache (faster load\&parse, worse search)
 * better looking email templates
