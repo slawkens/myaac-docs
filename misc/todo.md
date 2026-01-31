@@ -28,24 +28,17 @@ And here's the list:
 * use separate tables without modifing the OTServ schema (myaac\_accounts, myaac\_players)
 * fundamental changes in Twig:
   * add option to write themes in Twig
-* better gallery with carousel
-  * that is automatically generated from images in images/gallery folder (no need to upload)
 * flags/permissions editor as new tab in accounts editor
   * example flag (for reference): FLAG\_CONTENT\_MAILER
   * after done: remember to remove "Website Access:" from account tab
 * maybe we can move serverInfo page to database (Pages) so it can be edited in Admin Panel (check how far possible)
-* move gallery Class to libs/gallery.php
 * kathrine tickets - show/hide
-* change constants: BASE\_URL to base\_url(), USE\_ACCOUNT\_NAME to config
 * new configurables:
   * login\_session\_time
   * login\_fail\_attempts
   * login\_fail\_attempts
   * account\_identity = name,number,email
 * move website from WordPress to github.io or readthedocs.org
-* WordPress: Insert Headers and Footers
-  * nice example how to insert to head, body from Admin Panel
-  * can be used to insert Google Analytics tags, HotJar, etc.
 * plugin auto-update and check-version
   * needs support from my-aac.org (plugins database)
 * configurable session handler: file, database, php
