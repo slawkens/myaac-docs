@@ -192,5 +192,73 @@ You can define the minimum version on which MyAAC plugin can be installed like t
   * cypress from ^12.12.0 to ^13.17.0
   * nesbot/carbon from 2.72.5 to 2.72.6
 
-### v2.0-dev (development version)
+### v1.2
+* Add HOOK_INIT, executed just after $hooks are loaded
+* Twig:
+  * Add template_name to twig variables
+  * Add session(key) function + reworked session functions to accept multi-array like in Laravel
+* Settings: password input hide/show, for sensitive data like API keys
+* Rework menus: Different categories can have different colors + Option to reset menus
 
+### v1.4
+* Plugins:
+  * json: Plugin name is required, a version is optional now
+  * Feat: admin-pages (can add admin pages through plugins) (https://github.com/slawkens/myaac/commit/ceaa0639e66d31e8177ff90791463470367aa45d)
+* Functions:
+  * db->hasTableAndColumns(table, columns)
+* Twigs: Add noSubmit option to buttons.base
+
+### v1.5
+* Twig:
+  * Filter hooks: https://github.com/slawkens/myaac/pull/258
+  * Add db variable to twig
+  * Possibility to use a custom **views/** folder in the themes for twigs, for better organization
+* Settings:
+  * Add float and double types
+
+### v1.7
+* Plugins:
+  * Add version check from plugins repo API
+* New hooks:
+  * HOOK_ACCOUNT_MANAGE_AFTER_CHARACTERS
+  * HOOK_GUILDS_AFTER_MANAGE_BUTTON
+
+### v1.8.1
+* New Commands:
+  * plugin:enable/disable/uninstall {plugin-name}
+
+### v1.8.2
+* Routes: 
+  * Possibility to override routes with plugins pages, like characters.php - No need to define routes in plugin.json anymore
+
+### v1.8.3
+* New config:
+  * hooks_debug (To view where hooks are located in .twig files), set it to true in config.local.php to activate it
+* New Functions: 
+  * db->getColumnInfo(table, column)
+* Router:
+  * Add an option to use ?subtopic=page-name for pages loaded by plugins (easier migration from 0.8.x)
+* getTopPlayers() Function - Add lookmount & promotion
+* New hooks:
+  * HOOK_ACCOUNT_CHANGE_PASSWORD_AFTER_OLD_PASSWORD
+  * HOOK_ACCOUNT_CHANGE_PASSWORD_AFTER_NEW_PASSWORD
+* Cache::remember $ttl = -1 = infinite
+
+### v1.8.5
+* Settings: escapeHtml in values (support for HTML code)
+* Plugins System: Add plugin:remove + plugin:delete as alias for plugin:uninstall + plugin:activate/deactivate
+
+### v1.8.6
+* New hook for validate character name:
+  * HOOK_FILTER_VALIDATE_CHARACTER_NEW_NAME
+
+### v1.8.8
+* New hooks for the change-comment page:
+  * HOOK_ACCOUNT_CHARACTERS_CHANGE_COMMENT_AFTER_SUCCESS
+  * HOOK_ACCOUNT_CHARACTERS_CHANGE_COMMENT_AFTER_NAME
+  * HOOK_ACCOUNT_CHARACTERS_CHANGE_COMMENT_AFTER_HIDE_ACCOUNT
+  * HOOK_ACCOUNT_CHARACTERS_CHANGE_COMMENT_AFTER_COMMENT
+
+### v2.0-dev (development version)
+* Add the possibility to fetch skills, balance and frags in the getTopPlayers function (#347)
+* Reworked account action logs to use a single IP column as varchar(45) for both ipv4 and ipv6 (#289)
