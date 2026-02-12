@@ -253,6 +253,9 @@ You can define the minimum version on which MyAAC plugin can be installed like t
   * HOOK_FILTER_VALIDATE_CHARACTER_NEW_NAME
 
 ### v1.8.8
+* Twig: Extract $twig→renderInline(content, context) as a method
+* Settings: Fix variable overlapping if the same var name as in core
+  * You can use a variable called env or anything you wish
 * New hooks for the change-comment page:
   * HOOK_ACCOUNT_CHARACTERS_CHANGE_COMMENT_AFTER_SUCCESS
   * HOOK_ACCOUNT_CHARACTERS_CHANGE_COMMENT_AFTER_NAME
