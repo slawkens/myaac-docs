@@ -14,6 +14,8 @@ Plugins are distributed using .zip archives.
 
 Visit Admin Page of your server - your-domain.net/admin and from menu go to **Plugins**.
 
+You can also install by command line: `cd /var/www/html && php aac plugin:install /path/to/plugin.zip`
+
 ## Remove / Uninstall
 
 Plugins can be removed, which erases all the files. Database changes are not reverted. That means any change that plugin made to your database, like adding new table or columns, will **NOT** be removed on removal. This is subject to change, in future versions of MyAAC. Not all plugins can be uninstalled, some of them may require manual remove from a file system.
@@ -32,7 +34,7 @@ This section should give some basic overview about plugins architecture.
       * templates in templates/ folder
       * pages in system/pages/
     * (applies only to 1.0+) you can put custom content in the following folders under the plugin:
-      * admin-pages/ 
+      * admin-pages/
       * pages/
       * themes/
       * and commands/
@@ -80,6 +82,8 @@ define('HOOK_LOGIN', 13); // executed on succesfull login
 define('HOOK_LOGIN_ATTEMPT', 14); // executed on unsuccesfull attempt
 define('HOOK_LOGOUT', 15); // executed on logout
 ```
+
+[Hooks tutorial](customize/plugins/hooks.md)
 
 For other hooks look in:
 * **system/hooks.php** (myaac 0.8)

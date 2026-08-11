@@ -10,7 +10,7 @@ If you have other idea - let us known. You can contact us on [Discord Channel my
 
 ### Code Rules
 
-We use [EditorConfig](https://github.com/otsoft/myaac/blob/master/.editorconfig) to force some rules, please follow them in your editor. You can find plugin for IDE of your choice here: https://editorconfig.org/#download
+We use [EditorConfig](https://github.com/slawkens/myaac/blob/main/.editorconfig) to force some rules, please follow them in your editor. You can find plugin for IDE of your choice here: https://editorconfig.org/#download
 
 Except that, please follow some other rules:
 

@@ -11,3 +11,5 @@ Tested to work with:
 * OTX Server
 * OTServBR-Global 12x
 * Otserv 0.6.3, 0.6.4 and above
+* TVP Engine (since MyAAC v2.0)
+* BlackTek (Will be supported in MyAAC v3.0)

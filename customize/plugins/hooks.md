@@ -1,6 +1,6 @@
 # Hooks
 
-Hooks is a feature that allows you to customize AAC and inject code in places you want.
+Hooks is an events system that allows you to customize AAC and inject code in places you want.
 
 In this capitel the most important hooks will be listed.
 
@@ -74,7 +74,7 @@ return false
 
 This hook allows you to add/modify menus in admin panel.
 
-This example adds "Gifts System" group with two links: Gifts + Add Offer
+This example adds "Gifts System" group with two links: Offers + Add Offer
 
 ```php
 <?php
@@ -104,7 +104,7 @@ Params: $args['viewName']
 Both can be used to pass custom parameters to $twig->display and $twig->render.
 
 ### HOOK_INIT
-This is the first hook executed after the hooks system is initialized.
+This is the first hook executed after the hooks system is initialized. There is no database connection yet.
 
 ### HOOK_STARTUP
 Executed after all systems are loaded. The website is already connected to database, and login system is ready.

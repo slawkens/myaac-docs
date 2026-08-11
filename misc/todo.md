@@ -28,10 +28,6 @@ And here's the list:
 * use separate tables without modifing the OTServ schema (myaac\_accounts, myaac\_players)
 * fundamental changes in Twig:
   * add option to write themes in Twig
-* flags/permissions editor as new tab in accounts editor
-  * example flag (for reference): FLAG\_CONTENT\_MAILER
-  * after done: remember to remove "Website Access:" from account tab
-* maybe we can move serverInfo page to database (Pages) so it can be edited in Admin Panel (check how far possible)
 * kathrine tickets - show/hide
 * new configurables:
   * login\_session\_time
