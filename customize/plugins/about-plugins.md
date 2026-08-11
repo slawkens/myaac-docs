@@ -14,7 +14,7 @@ Plugins are distributed using .zip archives.
 
 ## Install
 
-Visit Admin Page of your server - your-domain.net/admin and from menu go to **Plugins**.
+Visit Admin Page of your server - your-domain.net/admin and from menu go to **Plugins**. From there you can upload the plugin.
 
 You can also install by command line: `cd /var/www/html && php aac plugin:install /path/to/plugin.zip`
 
