@@ -1,6 +1,6 @@
 # About plugins
 
-MyAAC allows customisations with so called Plugins system.
+MyAAC allows customizations with a so-called Plugins system.
 
 Plugins are distributed using .zip archives.
 
@@ -16,7 +16,7 @@ Visit Admin Page of your server - your-domain.net/admin and from menu go to **Pl
 
 ## Remove / Uninstall
 
-Plugins can be removed, which erases all the files. Database changes are not reverted. That means any change that plugin made to your database, like adding new table or columns, will **NOT** be removed on removal. This is subject to change, in future versions of MyAAC. Not all plugin can be uninstalled, some of them may require manual remove from file system.
+Plugins can be removed, which erases all the files. Database changes are not reverted. That means any change that plugin made to your database, like adding new table or columns, will **NOT** be removed on removal. This is subject to change, in future versions of MyAAC. Not all plugins can be uninstalled, some of them may require manual remove from a file system.
 
 ## Develop
 
@@ -27,11 +27,12 @@ This section should give some basic overview about plugins architecture.
 * plugins/
   * your-plugin.json
   * your-plugin/ (directory)
-    * all files that your plugins uses should be placed here.
-    * (applies only to 0.8) Except files like templates and pages that currently needs to be placed outside of this folder
+    * all files that your plugins use should be placed here.
+    * (applies only to 0.8) Except files like templates and pages that currently need to be placed outside of this folder
       * templates in templates/ folder
       * pages in system/pages/
     * (applies only to 1.0+) you can put custom content in the following folders under the plugin:
+      * admin-pages/ 
       * pages/
       * themes/
       * and commands/

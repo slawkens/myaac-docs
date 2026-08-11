@@ -31,4 +31,4 @@ Check "Enable TinyMCE"
 
 Now with the visual editor you can edit the page look.
 
-You can also check "PHP" and paste PHP page in the editor.
+You can also check "PHP" and paste the PHP code in the editor.

@@ -1,12 +1,12 @@
 # Updating
 
-Updating AAC to the newest version is very simple. Thanks to our migration script your database schema will be automatically updated when first time visiting the updated site.
+Updating AAC to the newest version is very simple. Thanks to our migration script, your database schema will be automatically updated when first time visiting the updated site.
 
 To easily update your AAC without conflicts, please use config.local.php to store your config.php changes. This way you won't need to care about config changes that were applied between releases.
 
 ## How to use config.local.php?
 
-Copy config value from config.php, and paste it into config.local.php into $config array.
+Copy the config value from config.php and paste it into config.local.php into $config array.
 
 Example: (if you want to modify friendly\_urls from config.php)
 
