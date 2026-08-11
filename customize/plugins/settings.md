@@ -15,7 +15,7 @@ Now open plugins/my-plugin/settings.php and paste following, this is just a basi
 
 return [
 	'name' => 'My Plugin', // name that will be displayed under Settings menu in Admin Panel
-	'key' => 'my_plugin', // will be used with setting() function, must be unique for every setting
+	'key' => 'my_plugin', // will be used with setting() function, must be unique for every plugin
 	'settings' =>
 	[
 		[
