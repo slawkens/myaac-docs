@@ -228,13 +228,13 @@ You can define the minimum version on which MyAAC plugin can be installed like t
   * plugin:enable/disable/uninstall {plugin-name}
 
 ### v1.8.2
-* Routes: 
+* Routes:
   * Possibility to override routes with plugins pages, like characters.php - No need to define routes in plugin.json anymore
 
 ### v1.8.3
 * New config:
   * hooks_debug (To view where hooks are located in .twig files), set it to true in config.local.php to activate it
-* New Functions: 
+* New Functions:
   * db->getColumnInfo(table, column)
 * Router:
   * Add an option to use ?subtopic=page-name for pages loaded by plugins (easier migration from 0.8.x)
@@ -264,6 +264,12 @@ You can define the minimum version on which MyAAC plugin can be installed like t
   * HOOK_ACCOUNT_CHARACTERS_CHANGE_COMMENT_AFTER_HIDE_ACCOUNT
   * HOOK_ACCOUNT_CHARACTERS_CHANGE_COMMENT_AFTER_COMMENT
 
-### v2.0-dev (development version)
+### v1.9.0
+* New hook: HOOK_FILTER_MAIL
+
+### v2.0-alpha (development version)
 * Add the possibility to fetch skills, balance and frags in the getTopPlayers function (#347)
 * Reworked account action logs to use a single IP column as varchar(45) for both ipv4 and ipv6 (#289)
+* Plugins: autoload init-priority option
+* Make myaac_config table columns bigger (key from 30 to 255 and value from 1000 to 10000)
+* Do not save sessions in myaac system folder (https://github.com/slawkens/myaac/commit/6f2bfd21eb7657e98a71ab09c20e2b39fd1cfbdd)
