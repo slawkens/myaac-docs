@@ -1,6 +1,6 @@
 # Hooks
 
-Hooks is an events system that allows you to customize AAC and inject code in places you want.
+Hooks aka events system allows you to customize AAC and inject code in places you want.
 
 In this capitel the most important hooks will be listed.
 
