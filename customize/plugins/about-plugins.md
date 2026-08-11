@@ -7,8 +7,10 @@ Plugins are distributed using .zip archives.
 ## What can be done with plugins
 
 * Themes (old: templates)
-* Pages
-* Other custom content
+* (Admin) Pages
+* Settings
+* Commands
+* Other custom content (with hooks)
 
 ## Install
 

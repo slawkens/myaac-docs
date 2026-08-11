@@ -22,6 +22,7 @@
   * [Compatibility](customize/plugins/compatibility.md)
   * [Hooks](customize/plugins/hooks.md)
   * [Admin Pages](customize/plugins/admin-pages.md)
+  * [Settings](customize/plugins/settings.md)
 * [Templates](customize/templates.md)
 
 ## Misc
