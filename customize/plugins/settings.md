@@ -54,7 +54,7 @@ Following "type" are allowed:
 ],
 ```
 
-### New Header(section)
+### New Header (section)
 ```php
 [
 	'type' => 'section',
@@ -64,13 +64,26 @@ Following "type" are allowed:
 
 Note: After category, there is a requirement to add a section, otherwise it will look weird.
 
-### boolean
+### boolean (true/false)
 ```php
 'csrf_protection' => [
 	'name' => 'CSRF protection',
 	'type' => 'boolean',
 	'desc' => 'Its recommended to keep it enabled. Disable only if you know what you are doing.',
 	'default' => true,
+],
+```
+
+### number
+```php
+'smtp_port' => [
+	'name' => 'SMTP Port',
+	'type' => 'number',
+	'desc' => '25 (default) / 587 (tls - GMail, Microsoft Outlook)',
+	'default' => 25,
+	'show_if' => [
+		'mail_enabled', '=', 'true'
+	]
 ],
 ```
 
@@ -84,7 +97,7 @@ Note: After category, there is a requirement to add a section, otherwise it will
 ],
 ```
 
-### textarea
+### textarea (long text)
 ```php
 'meta_keywords' => [
 	'name' => 'Meta Keywords',
@@ -92,19 +105,6 @@ Note: After category, there is a requirement to add a section, otherwise it will
 	'desc' => 'keywords list separated by commas',
 	'default' => 'free online game, free multiplayer game, ots, open tibia server',
 ]
-```
-
-### Number
-```php
-'smtp_port' => [
-	'name' => 'SMTP Port',
-	'type' => 'number',
-	'desc' => '25 (default) / 587 (tls - GMail, Microsoft Outlook)',
-	'default' => 25,
-	'show_if' => [
-		'mail_enabled', '=', 'true'
-	]
-],
 ```
 
 ### options (select)
