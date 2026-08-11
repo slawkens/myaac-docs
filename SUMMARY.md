@@ -20,6 +20,8 @@
 * [Plugins](customize/plugins/README.md)
   * [About plugins](customize/plugins/about-plugins.md)
   * [Compatibility](customize/plugins/compatibility.md)
+  * [Hooks](customize/plugins/hooks.md)
+  * [Admin Pages](customize/plugins/admin-pages.md)
 * [Templates](customize/templates.md)
 
 ## Misc
