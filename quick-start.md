@@ -6,8 +6,8 @@ description: Quick start with docker.
 
 ## Docker
 
-Warning: <span style="color:red">This is not recommended setup for production/live servers!
-Use only for local development!</span>
+🔴IMPORTANT: This is not recommended setup for production/live servers!
+Use only for local development!
 
 Prerequisites:
 * __docker__
