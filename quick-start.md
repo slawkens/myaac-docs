@@ -6,7 +6,7 @@ description: Quick start with docker.
 
 ## Docker
 
-🔴IMPORTANT: This is not recommended setup for production/live servers!
+🔴__IMPORTANT__: This is not recommended setup for production/live servers!
 Use only for local development!
 
 Prerequisites:
