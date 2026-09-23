@@ -51,13 +51,13 @@ Visit [https://getcomposer.org/](https://getcomposer.org/) for more instructions
 After installing composer, install dependencies with following command
 
 ```bash
-php composer.phar install
+php composer.phar install -o
 ```
 
 or just
 
 ```bash
-composer install
+composer install -o
 ```
 
 (depends on how you installed the composer on your system)
