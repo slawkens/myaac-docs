@@ -34,10 +34,11 @@ After that you will have full local development setup.
 * mailpit: [http://localhost:8025](http://localhost:8025) (here you can view emails sent, for testing purposes)
 
 ### Emails
-To test emails locally you can configure Mailing in the Admin Panel of MyAAAC with following settings:
+To test emails locally you can configure Mailing in the Admin Panel of MyAAC.
 
 Go to Admin Panel -> Settings -> Mailing
 
+Set:
 * Option: __SMTP__
 * Host: __mailpit__ (this is the domain)
 * Port __1025__
