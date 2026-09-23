@@ -6,7 +6,7 @@ The CLI interface to interfere with myaac is called: __aac__
 
 It's php file like in Laravel there is __artisan__.
 
-The whole concept is based on the Symfony component - Console. You can find a lot of documentation and how to write commands on their website - https://symfony.com/doc/current/components/console.html
+The whole concept is based on the Symfony component - Console. You can find a lot of documentation and how to write commands on [Symfony Docs](https://symfony.com/doc/current/components/console.html)
 
 How to use that? Just write in console (while being in myaac main folder): `php aac` - you should see a list of commands.
 
