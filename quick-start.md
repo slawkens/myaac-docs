@@ -1,10 +1,10 @@
 ---
-description: Here will be description about quick start with docker.
+description: Quick start with docker.
 ---
 
 # Quick Start
 
-## docker
+## Docker
 
 Prerequisites:
 * __docker__
@@ -24,15 +24,17 @@ After that you will have full local development setup. (this image is not recomm
 
 ### Access:
 
-* myaac: http://localhost:8001
-* phpmyadmin: http://localhost:8002 (you should be logged in automatically)
-* mailpit: http://localhost:8025 (here you can view emails sent, for testing purposes)
+* myaac: [http://localhost:8001](http://localhost:8001)
+* phpmyadmin: [http://localhost:8002](http://localhost:8002) (you should be logged in automatically)
+* mailpit: [http://localhost:8025](http://localhost:8025) (here you can view emails sent, for testing purposes)
 
 ### Emails
 To test emails locally you can configure Mailing in the Admin Panel of MyAAAC with following settings:
 
+Go to Admin Panel -> Settings -> Mailing
+
 * Option: __SMTP__
-* Host: __mailpit__
+* Host: __mailpit__ (this is the domain)
 * Port __1025__
 * Auth: __no__
 * Username & password: __leave empty__
