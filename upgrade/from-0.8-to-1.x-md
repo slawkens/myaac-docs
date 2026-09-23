@@ -1,0 +1,26 @@
+# Files you want to keep from 0.8
+* images/guilds (guilds logo images)
+* system/logs (myaac logs)
+* config.local.php + config.php (configuration)
+* templates/your-template
+
+# config.php removed
+config.php has been migrated to Settings in Admin Panel. There is no migration available, you need to manually re-configure all the settings again.
+
+# Composer + NPM
+Composer is now used for PHP libraries and NPM for front-end libraries.
+You need to install those in your hosting, or use packages from GitHub releases which contains those libraries.
+
+# New router
+The AAC routes has been moved to system/routes.php. Previously they were defined in **$rules** array in index.php
+
+# Commands
+In **0.8** the CLI commands were saved in system/bin folder.
+In **1.x** they use symfony/console package, and are saved in system/src/Commands, and can be also extended with plugins - example in the [Commands](misc/commands.md) page.
+
+# Bootstrap 4 for admin Panel
+Admin panel has been rewritten with Bootstrap 4 (from 3).
+
+# Eloquent ORM
+Eloquent - the same database framework which is used by Laravel, has been adopted to myaac.
+You can see the Models in system/src/Models
