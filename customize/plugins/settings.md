@@ -2,7 +2,7 @@
 
 You can add your own settings to the admin panel.
 
-For that, define following in your plugins .json file:
+For that, define following in your plugin .json file:
 
 ```json
 "settings": "plugins/my-plugin/settings.php",
