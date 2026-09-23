@@ -85,7 +85,7 @@ define('HOOK_LOGIN_ATTEMPT', 14); // executed on unsuccesfull attempt
 define('HOOK_LOGOUT', 15); // executed on logout
 ```
 
-[Hooks tutorial](customize/plugins/hooks.md)
+[Hooks tutorial](hooks.md)
 
 For other hooks look in:
 * **system/hooks.php** (myaac 0.8)
