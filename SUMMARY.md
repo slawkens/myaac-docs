@@ -25,11 +25,13 @@
   * [Settings](customize/plugins/settings.md)
 * [Templates](customize/templates.md)
 
+## Upgrade
+
+* [1.x](upgrade/1-x.md)
+* [2.x](upgrade/2-x.md)
+
 ## Misc
 
-* Upgrade
-  * [0.8 - 1.x](upgrade/from-0.8-to-1.md)
-  * [1.x - 2.x](upgrade/from-1.x-to-2.x.md)
 * [Updating](misc/updating.md)
 * [Contributing](misc/contributing.md)
 * [TODO](misc/todo.md)
