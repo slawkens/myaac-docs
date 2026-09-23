@@ -28,8 +28,8 @@
 ## Misc
 
 * Upgrade
-  * [0.8 - 1.x](from-0.8-to-1.md)
-  * [1.x - 2.x](from-1.x-to-2.x.md)
+  * [0.8 - 1.x](upgrade/from-0.8-to-1.md)
+  * [1.x - 2.x](upgrade/from-1.x-to-2.x.md)
 * [Updating](misc/updating.md)
 * [Contributing](misc/contributing.md)
 * [TODO](misc/todo.md)
