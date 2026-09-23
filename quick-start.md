@@ -6,19 +6,21 @@ description: Quick start with docker.
 
 ## Docker
 
-🔴__IMPORTANT__: This is not recommended setup for production/live servers!
+🔴 __IMPORTANT__: This is not recommended setup for production/live servers!
 Use only for local development!
 
-Prerequisites:
+### Prerequisites:
 * __docker__
 * __git__
 * myaac __develop__ branch
 
+### Commands
 ```bash
 git clone https://github.com/slawkens/myaac.git
 git checkout develop
 cd myaac
-cd docker/full && docker compose up --build
+cd docker/full
+docker compose up --build
 ```
 
 It can take few minutes to setup everything.
