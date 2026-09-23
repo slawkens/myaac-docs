@@ -126,7 +126,7 @@ Prefix each command with `php aac`, like `php aac cache:clear`
 
 You can add your own commands using plugins. Just create a new folder in your plugin folder called: __commands__.
 
-Create file HelloWorldCommand.php and paste inside:
+Create file `plugins/my-plugin/commands/HelloWorldCommand.php` and paste inside:
 ```
 <?php
 
