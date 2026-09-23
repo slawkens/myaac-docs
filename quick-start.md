@@ -6,6 +6,9 @@ description: Quick start with docker.
 
 ## Docker
 
+Warning: <span style="color:red">This is not recommended setup for production/live servers!
+Use only for local development!</span>
+
 Prerequisites:
 * __docker__
 * __git__
@@ -20,9 +23,9 @@ cd docker/full && docker compose up --build
 
 It can take few minutes to setup everything.
 
-After that you will have full local development setup. (this image is not recommended for production/live servers).
+After that you will have full local development setup.
 
-### Access:
+### Access
 
 * myaac: [http://localhost:8001](http://localhost:8001)
 * phpmyadmin: [http://localhost:8002](http://localhost:8002) (you should be logged in automatically)
