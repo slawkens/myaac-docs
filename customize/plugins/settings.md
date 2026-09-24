@@ -62,7 +62,7 @@ Following "type" are allowed:
 ],
 ```
 
-Note: After category, there is a requirement to add a section, otherwise it will look weird.
+Note: After category, there is a requirement to add a section, otherwise it will not be displayed correctly.
 
 ### boolean (true/false)
 ```php
